@@ -131,6 +131,8 @@ def apply_app_changes
   # setup application logic
 
   directory "app/components", force: true
+  copy_file "config/initializers/view_component.rb", force: true
+  
   directory "app/helpers", force: true
   directory "app/interactions", force: true
   directory "app/mailers", force: true
@@ -143,6 +145,7 @@ def apply_app_changes
   generate "rspec:install"
   directory "spec", force: true
   copy_file ".rspec", force: true
+  copy_file "lib/tasks/factory_bot.rake", force: true
 
   # setup db related gems
   generate "hypershield:install"

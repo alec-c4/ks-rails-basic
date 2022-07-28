@@ -22,6 +22,7 @@ gem "stimulus-rails"
 gem "turbo-rails"
 gem "jbuilder"
 gem "view_component"
+gem "lookbook"
 
 ### I18n
 gem "i18n-tasks"
