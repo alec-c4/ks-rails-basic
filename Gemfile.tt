@@ -12,7 +12,7 @@ gem "pg"<%= gemfile_requirement("pg") %>
 gem "activerecord-postgres_enum"
 gem "redis", "~> 4.0"
 gem "hypershield"
-gem "strong_migrations"
+gem "online_migrations"
 
 ### Frontend
 gem "better_html"
